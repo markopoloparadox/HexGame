@@ -211,21 +211,23 @@ void TileManager::LoadTileSet(const char* fileName)
 void TileManager::Draw(sf::RenderWindow * win)
 {
 
-	sf::Text txt;
-	txt.setFont(*font);
-	txt.setFillColor(sf::Color::Black);
-	txt.setCharacterSize(15);
+	//sf::Text txt;
+	//txt.setFont(*font);
+	//txt.setFillColor(sf::Color::Black);
+	//txt.setCharacterSize(15);
 
-	uInt tileID = FindTileByPosition(sf::Mouse::getPosition(*win).x, sf::Mouse::getPosition(*win).y);
+	//uInt tileID = FindTileByPosition(sf::Mouse::getPosition(*win).x, sf::Mouse::getPosition(*win).y);
 
 	for (uInt i = 0; i < m_shapes.size(); ++i)
 	{
-		//uShort bId = m_tiles[i].m_backId;
-		//uShort sId = m_tiles[i].m_surfId;
-		//m_shapes[i].setTexture(&m_backgrounds[bId].second);
-		//m_shapes[i].setTexture(&m_surfaces[sId].second);
-		//win->draw(m_shapes[i]);
+		uShort bId = m_tiles[i].m_backId;
+		uShort sId = m_tiles[i].m_surfId;
+		m_shapes[i].setTexture(&m_backgrounds[bId].second);
+		win->draw(m_shapes[i]);
+		m_shapes[i].setTexture(&m_surfaces[sId].second);
+		win->draw(m_shapes[i]);
 
+		/*
 		m_shapes[i].setFillColor(sf::Color::White);
 
 
@@ -238,5 +240,6 @@ void TileManager::Draw(sf::RenderWindow * win)
 		txt.setString(std::to_string(uInt(m_shapes[i].getPosition().x + TILE_W * 0.5f)) + "\n" + std::to_string(uInt(m_shapes[i].getPosition().y + TILE_H * 0.5f)));
 		txt.setPosition(m_shapes[i].getPosition().x + TILE_W * 0.25f, m_shapes[i].getPosition().y + TILE_H * 0.25f);
 		win->draw(txt);
+		*/
 	}
 }
