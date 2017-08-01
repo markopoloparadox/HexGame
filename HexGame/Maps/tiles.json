@@ -1,0 +1,17 @@
+{
+    "Background" :
+    [
+		{"Name" : "Empty", "Id" : 0, "File": "Tiles/BEmpty.png"},
+        {"Name" : "Water", "Id" : 1, "File": "Tiles/BWater.png"},
+        {"Name" : "Plain", "Id" : 2, "File": "Tiles/BPlain.png"},
+        {"Name" : "Desert", "Id" : 3, "File": "Tiles/BDesert.png"}
+    ],
+    
+    "Surface" :
+    [
+		{"Name" : "Empty", "Id" : 0, "File": "Tiles/SEmpty.png"},
+        {"Name" : "Fish", "Id" : 1, "File": "Tiles/SFish.png"},
+        {"Name" : "Horses", "Id" : 2, "File": "Tiles/SHorses.png"},
+        {"Name" : "Jungle", "Id" : 3, "File": "Tiles/SJungle.png"}
+    ]
+}

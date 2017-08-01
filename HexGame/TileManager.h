@@ -22,7 +22,7 @@ public:
 	~TileManager();
 
 	void LoadMap(const char* fileName);
-	void LoadTiles(const char* fileName);
+	void LoadTileSet(const char* fileName);
 	void Draw(sf::RenderWindow* win);
 	sf::Font* font;
 

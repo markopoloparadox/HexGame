@@ -139,6 +139,8 @@ void TileManager::LoadMap(const char * fileName)
 	std::cout << "Input map file: " << fileName << "\n" << js << "\n";
 
 
+	LoadTileSet(js["TileSet"].get<std::string>().c_str());
+
 	m_rows = js["Rows"].get<uShort>();
 	m_cols = js["Cols"].get<uShort>();
 	
@@ -173,7 +175,7 @@ void TileManager::LoadMap(const char * fileName)
 	}
 }
 
-void TileManager::LoadTiles(const char * fileName)
+void TileManager::LoadTileSet(const char* fileName)
 {
 	std::ifstream i(fileName);
 

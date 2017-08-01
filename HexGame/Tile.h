@@ -1,5 +1,5 @@
 #pragma once
-#include<memory>
+#include <memory>
 #include <SFML\Graphics\ConvexShape.hpp>
 
 #include "Common.h"

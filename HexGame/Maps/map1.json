@@ -1,4 +1,5 @@
 {
+	"TileSet" : "Maps/tiles.json",
     "Rows" : 12,
     "Cols" : 10,
     "Background_data" : 

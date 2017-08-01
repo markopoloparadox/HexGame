@@ -13,7 +13,7 @@ int main()
 
 
 	sf::Font font;
-	font.loadFromFile("arial.ttf");
+	font.loadFromFile("Fonts/arial.ttf");
 	// Create a text
 	// Draw it
 
@@ -23,8 +23,7 @@ int main()
 	m_win->setFramerateLimit(60);
 
 	TileManager tm;
-	tm.LoadTiles("tiles.json");
-	tm.LoadMap("map1.json");
+	tm.LoadMap("Maps/map1.json");
 	tm.font = &font;
 
 
