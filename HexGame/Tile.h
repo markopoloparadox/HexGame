@@ -15,7 +15,7 @@ private:
 	uInt m_shapeId = 0;
 
 	uShort m_backId = 0;
-	uShort m_surfId = 0;
+	uShort m_rescId = 0;
 
 	uShort m_r = 0;
 	uShort m_c = 0;

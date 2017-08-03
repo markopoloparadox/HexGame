@@ -7,13 +7,12 @@
 
 int main()
 {
-	sf::Font font;
-	font.loadFromFile("Fonts/arial.ttf");
 	// Create a text
 	// Draw it
 
 	Gui mainWindow;
 	TileManager tm;
+	mainWindow.SetTileManager(&tm);
 	tm.LoadMap("Maps/map1.json");
 
 

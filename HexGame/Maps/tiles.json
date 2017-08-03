@@ -1,17 +1,22 @@
 {
+	"Height" : 100,
+	"Width" : 100,
     "Background" :
     [
-		{"Name" : "Empty", "Id" : 0, "File": "Tiles/BEmpty.png"},
-        {"Name" : "Water", "Id" : 1, "File": "Tiles/BWater.png"},
-        {"Name" : "Plain", "Id" : 2, "File": "Tiles/BPlain.png"},
-        {"Name" : "Desert", "Id" : 3, "File": "Tiles/BDesert.png"}
+		{"Name" : "Empty", "Id" : 0, "File": "Tiles/Background/Empty.png"},
+        {"Name" : "Water", "Id" : 1, "File": "Tiles/Background/Water.png"},
+        {"Name" : "Dirt", "Id" : 2, "File": "Tiles/Background/Dirt.png"},
+        {"Name" : "Desert", "Id" : 3, "File": "Tiles/Background/Desert.png"},
+		{"Name" : "Grass", "Id" : 4, "File": "Tiles/Background/Grass.png"},
+		{"Name" : "Woods", "Id" : 5, "File": "Tiles/Background/Woods.png"},
+		{"Name" : "Mountain", "Id" : 6, "File": "Tiles/Background/Mountain.png"}
     ],
     
-    "Surface" :
+    "Resource" :
     [
-		{"Name" : "Empty", "Id" : 0, "File": "Tiles/SEmpty.png"},
-        {"Name" : "Fish", "Id" : 1, "File": "Tiles/SFish.png"},
-        {"Name" : "Horses", "Id" : 2, "File": "Tiles/SHorses.png"},
-        {"Name" : "Jungle", "Id" : 3, "File": "Tiles/SJungle.png"}
+		{"Name" : "Empty", "Id" : 0, "File": "Tiles/Resource/Empty.png"},
+        {"Name" : "Fish", "Id" : 1, "File": "Tiles/Resource/Fish.png"},
+        {"Name" : "Horses", "Id" : 2, "File": "Tiles/Resource/Horses.png"},
+        {"Name" : "Jungle", "Id" : 3, "File": "Tiles/Resource/Jungle.png"}
     ]
 }
